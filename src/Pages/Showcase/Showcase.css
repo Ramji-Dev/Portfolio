@@ -1,0 +1,33 @@
+@font-face {
+    font-family: monu;
+    src: url(../../fonts/MonumentExtended-Regular.woff2);
+}
+
+@font-face {
+    font-family: drugLI;
+    src: url(../../fonts/Drugs-Light-Italic.woff2);
+}
+@font-face {
+    font-family: drugL;
+    src: url(../../fonts/Drugs-Light.woff2);
+}
+
+@font-face {
+    font-family: drugReg;
+    src: url(../../fonts/Drugs-Regular.woff2);
+}
+
+@font-face {
+    font-family: drugTI;
+    src: url(../../fonts/Drugs-Thin-Italic.woff2);
+}
+
+@font-face {
+    font-family: ivy-it;
+    src: url(../../fonts/Ivy-italic.woff2);
+}
+
+@font-face {
+    font-family: ivy;
+    src: url(../../fonts/Ivy-light.woff2);
+}
