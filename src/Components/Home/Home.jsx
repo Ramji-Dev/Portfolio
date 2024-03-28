@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import Intro from '../Intro'
 import Bento from '../Bento'
 import Projects from '../Projects'
-import Loader from '../Loader/Loader'
 import About from '../About'
 import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
@@ -33,7 +32,7 @@ function Home() {
     return () => {
       gsap.ticker.remove(update)
     }
-  })
+  },[])
 
   const container = useRef()
 
@@ -60,7 +59,7 @@ function Home() {
   return (
     <ReactLenis root ref={lenisRef} autoRaf={false}>
       <div className='relative bg-darkLoki dark:bg-lightLoki' ref={container} onMouseMove={handleMove} onMouseLeave={handleLeave}>
-        <div className='bg-[#6200D2] dark:bg-loki w-[2vw] h-[2vw] rounded-full absolute z-[90] -translate-x-[50%] -translate-y-[50%] opacity-0 scale-0 mix-blend-exclusion pointer-events-none blur follower'></div>
+        <div className='bg-[#6200D2] dark:bg-loki w-[2vw] h-[2vw] hidden 3md:inline rounded-full absolute z-[90] -translate-x-[50%] -translate-y-[50%] opacity-0 scale-0 mix-blend-exclusion pointer-events-none blur follower'></div>
         <div className='h-[100svh] w-[100vw] fixed z-10 bg-darkLoki dark:bg-lightLoki flex flex-col items-center justify-around'>
           <div></div>
           <div className='mt-auto'>

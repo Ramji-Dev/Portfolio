@@ -23,8 +23,8 @@ export const details = [
         about: 'As a frontend developer, I thrive on crafting immersive digital experiences that captivate and engage users. Through my portfolio, I invite you to explore a showcase of my skills, projects, and journey in the world of web development.',
         techs: ['React JS', 'React Router', 'Tailwind CSS'],
         links: {
-            github: 'abc',
-            live: 'xyz'
+            github: 'https://github.com/Ramji-Dev/Portfolio',
+            live: 'https://ramji-portfolio.netlify.app/'
         }
     },
     {

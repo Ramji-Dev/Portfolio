@@ -53,7 +53,7 @@ function About() {
         </div>
 
         <div className='flex flex-col md:flex-row items-center justify-center gap-[8%] px-[2%]'>
-          <div className='w-[75vw] md:w-[25vw] object-cover rounded-[3.5vw] md:rounded-[1.5vw] overflow-hidden mb-[10%] md:mb-0'>
+          <div className='w-[75vw] h-[100vw] md:w-[25vw] md:h-[33vw] object-cover rounded-[3.5vw] md:rounded-[1.5vw] overflow-hidden mb-[10%] md:mb-0'>
             <img src="./images/ramji.webp" alt="ramji" className='-translate-y-[110%] rounded-[3.5vw] md:rounded-[1.5vw] image' />
           </div>
           <div className='relative md:-top-[2vw]'>

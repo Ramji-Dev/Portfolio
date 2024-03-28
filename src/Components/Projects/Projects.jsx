@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { details } from '../../assets/details'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -97,7 +97,7 @@ function Projects() {
                 <Link to={`/project/${projectName}`}> 
                   <div className='flex items-center justify-between relative z-20' onMouseMove={handleMove} onMouseLeave={handleLeave}>
                     
-                    <img src={logo} alt={projectName} className='w-[15%] fixed z-[99999] pointer-events-none -translate-x-[50%] -translate-y-[50%] opacity-0 scale-0 mix-blend-difference invisible logo'/>
+                    <img src={logo} alt={projectName} className='w-[15%] fixed z-[99999] pointer-events-none -translate-x-[50%] -translate-y-[50%] opacity-0 scale-0 mix-blend-difference invisible logo hidden 3md:inline-block'/>
 
                   <div className='mb-[4vh] md:mb-[8vh] pointer-events-none opacity-0 project'>
                     <svg className=' w-[6vw] md:w-[4.6vw]' viewBox="0 0 123 123" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

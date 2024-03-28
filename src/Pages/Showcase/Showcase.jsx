@@ -57,23 +57,23 @@ function Showcase() {
   const {projectName, image, about, techs, links} = projectDetails 
 
   return (
-    <div className='w-full min-h-screen text-black dark:text-white pt-[20%] sm:pt-[14%] md:pt-[8%] pb-[2%] px-[5%] flex flex-col md:flex-row items-center relative overflow-hidden' ref={container}>
+    <div className='w-full min-h-screen text-black dark:text-white pt-[20%] sm:pt-[14%] md:pt-[8%] pb-[2%] px-[5%] flex flex-col 3md:flex-row items-center relative overflow-hidden' ref={container}>
       <div className='mr-[3%] mb-[5%] md:mb-0 relative z-10'>
         <div className='overflow-hidden'>
           <h2 className='text-[5vw] sm:text-[3.5] md:text-[2.5vw] font-monu name translate-y-full'>{projectName}</h2>
         </div>
         <div className='overflow-hidden rounded-[2vw]'>
-          <img src={image} alt={projectName} className='rounded-[2vw] md:w-[55vw] -translate-y-full image' />
+          <img src={image} alt={projectName} className='rounded-[2vw] 3md:w-[55vw] -translate-y-full image' />
         </div>
       </div>
 
-      <div className=' md:w-[30%] flex flex-col items-center justify-end mt-[5%] relative z-10'>
-        <div className='font-drugL text-[3.5vw] sm:text-[2vw] md:text-[1.25vw] mb-[10%] md:mb-[25%] '>
+      <div className=' 3md:w-[30%] flex flex-col items-center justify-end mt-[5%] relative z-10'>
+        <div className='font-drugL text-[3.5vw] sm:text-[2vw] 3md:text-[1.25vw] mb-[10%] 3md:mb-[25%] '>
           <p className='translate-y-[20%] opacity-0 text'>{about}</p>
         </div>
 
-        <div className='w-full flex md:flex-col sm:justify-between relative z-10'>
-          <div className='mb-[30%] sm:mb-[10%] text-[3.5vw] sm:text-[2vw] md:text-[1.25vw]'>
+        <div className='w-full flex 3md:flex-col sm:justify-between relative z-10'>
+          <div className='mb-[30%] sm:mb-[10%] text-[3.5vw] sm:text-[2vw] 3md:text-[1.25vw]'>
               <div className='overflow-hidden'>
                 <h3 className='font-monu translate-y-full tech'>Tech Used</h3>
               </div>
@@ -89,7 +89,7 @@ function Showcase() {
               </div>
           </div>
 
-          <div className='flex items-end justify-evenly sm:justify-around font-monu w-full sm:w-[40%] md:w-full gap-[10vw] sm:gap-[5vw] absolute sm:relative bottom-0 z-10 opacity-0 button'>
+          <div className='flex items-end justify-evenly sm:justify-around font-monu w-full sm:w-[40%] 3md:w-full gap-[10vw] sm:gap-[5vw] absolute sm:relative bottom-0 z-10 opacity-0 button'>
             <a href={links.github} target='_blanck' className='bg-lightGreen text-black px-[8vw] py-[3.5vw] sm:px-[1vw] sm:py-[0.5vw] rounded-[2vw] sm:rounded-[0.5vw] flex items-center hover:shadow-2xl hover:shadow-[#9dff2d] transition-all duration-500 ease-[cubic-bezier(0.46, 0.48, 0.54, 0.8)]'><i className="ri-github-fill text-[4vw] md:text-[2vw] mr-2"></i> Code</a>
             <a href={links.live} target='_blanck' className='bg-lightGreen text-black px-[8vw] py-[3.5vw] sm:px-[1vw] sm:py-[0.5vw] rounded-[2vw] sm:rounded-[0.5vw] flex items-center hover:shadow-2xl hover:shadow-[#9dff2d] transition-all duration-500 ease-[cubic-bezier(0.46, 0.48, 0.54, 0.8)]'><i className="ri-arrow-right-up-line text-[4vw] md:text-[2vw] mr-2"></i> Live</a>
           </div>

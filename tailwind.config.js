@@ -39,7 +39,6 @@ export default {
       '2md': '860px',
       '3md': '992px',
       ...defaultTheme.screens,
-      // 'device': { 'raw': 'screen and (min-device-width: 400px) and (max-device-width: 1025px) and (orientation: landscape)' },
     },
     
     

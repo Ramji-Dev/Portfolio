@@ -102,12 +102,12 @@ function Navbar() {
                 </svg>
             </Link>
         </div>
-        <div className='min-h-[5vh] font-drugReg text-[6vw] sm:text-[3vw] md:text-[1.8vw] flex items-center justify-end gap-[5vw] md:relative'>
+        <div className='min-h-[5vh] font-drugReg text-[6vw] sm:text-[3vw] md:text-[1.5vw] flex items-center justify-end gap-[5vw] md:relative'>
             <div className='menu gap-[5vw] flex flex-col md:flex-row items-start justify-center bg-[#9dff2de2] backdrop-blur-sm md:backdrop-blur-0 md:bg-transparent text-black md:dark:text-white space-y-[5vw] md:space-y-0 p-[10%] md:p-0 min-h-[100vh] md:min-h-0 fixed md:relative top-0 translate-x-[100%] md:translate-x-0'>
                 {
                     [{text: 'Projects', id: 1}, {text: 'About', id: 2}, {text: 'Contact', id: 3}].map(({text, id}) => {
                         return (
-                            <div key={id} className='w-fit h-fit overflow-hidden cursor-pointer' onClick={closeMenu}>
+                            <div key={id} className='w-fit h-fit overflow-hidden' onClick={closeMenu}>
                                 <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12'><a href={`/#${text}`}>{text}</a></h1>
                             </div>      
                         )
