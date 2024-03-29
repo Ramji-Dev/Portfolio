@@ -23,7 +23,7 @@ function App() {
     <Provider store={store}>
       <div className='overflow-hidden bg-lightLoki dark:bg-darkLoki'>
         <div className='flex relative z-[999]'>
-          {/* <Loader /> */}
+          <Loader />
         </div>
         <div className='relative z-[100]'>
           <Navbar />
