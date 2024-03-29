@@ -44,6 +44,10 @@ function About() {
       duration: 1,
       delay: 2
     },'sim')
+
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    },1000)
     
   }, {scope: container})
 
