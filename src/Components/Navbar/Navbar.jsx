@@ -107,9 +107,12 @@ function Navbar() {
                 {
                     [{text: 'Projects', id: 1}, {text: 'About', id: 2}, {text: 'Contact', id: 3}].map(({text, id}) => {
                         return (
-                            <div key={id} className='w-fit h-fit overflow-hidden' onClick={closeMenu}>
-                                <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12'><a href={`/#${text}`}>{text}</a></h1>
-                            </div>      
+                            <div key={id} className='w-fit h-[8vw] sm:h-[4vw] md:h-[2.3vw] overflow-hidden' onClick={closeMenu}>
+                                <div className='overflow-hidden duration-500 md:hover:-translate-y-[50%]'>
+                                    <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12'><a href={`/#${text}`}>{text}</a></h1>
+                                    <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12'><a href={`/#${text}`}>{text}</a></h1>
+                                </div> 
+                            </div>     
                         )
                     })
                 }
