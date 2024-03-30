@@ -48,7 +48,7 @@ function Contact() {
                   <h1 className='translate-y-full text'>Want to</h1>
                 </div>
                 <div className='overflow-hidden'>
-                  <h1 className='translate-y-full text'>reach out?</h1>
+                  <h1 className='translate-y-full text w-[52vw] md:w-[26vw]'>reach out?</h1>
                 </div>
               </div>
               <div className='text-darkGray dark:text-loki text-[3.8vw] sm:text-[2.8vw] md:text-[1.8vw] relative z-10'>
@@ -65,7 +65,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className='overflw-hidden'>
+            <div>
               <div className='md:w-[40vw] md:h-[40vw] flex scale-[1.8]'>
                 <div>
                   <video autoPlay loop muted>

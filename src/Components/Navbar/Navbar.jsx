@@ -12,6 +12,13 @@ function Navbar() {
     const container = useRef();
 
     const { contextSafe } = useGSAP({scope: container})
+
+    const handleBookmark = () => {
+        document.querySelector('html').style.scrollBehavior = 'smooth';
+        setTimeout(() => {
+            document.querySelector('html').style.scrollBehavior = 'auto'
+        }, 500)
+    }
     
     const openMenu = contextSafe(() => {
         gsap.to('.menu', {
@@ -108,9 +115,9 @@ function Navbar() {
                     [{text: 'Projects', id: 1}, {text: 'About', id: 2}, {text: 'Contact', id: 3}].map(({text, id}) => {
                         return (
                             <div key={id} className='w-fit h-[8vw] sm:h-[4vw] md:h-[2.3vw] overflow-hidden' onClick={closeMenu}>
-                                <div className='overflow-hidden duration-500 md:hover:-translate-y-[50%]'>
+                                <div className='overflow-hidden duration-500 md:hover:-translate-y-[50%]' onClick={handleBookmark}>
                                     <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12'><a href={`/#${text}`}>{text}</a></h1>
-                                    <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12'><a href={`/#${text}`}>{text}</a></h1>
+                                    <h1 className='text anima-text opacity-0 uppercase translate-y-[120%] rotate-12 text-loki'><a href={`/#${text}`}>{text}</a></h1>
                                 </div> 
                             </div>     
                         )
