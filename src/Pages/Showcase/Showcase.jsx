@@ -62,7 +62,7 @@ function Showcase() {
         <div className='overflow-hidden'>
           <h2 className='text-[5vw] sm:text-[3.5] md:text-[2.5vw] font-monu name translate-y-full'>{projectName}</h2>
         </div>
-        <div className='overflow-hidden rounded-[2vw]'>
+        <div className='overflow-hidden rounded-[2vw] w-full h-[56.5vw] sm:h-[56.4vw] 3md:h-[35.7vw]'>
           <img src={image} alt={projectName} className='rounded-[2vw] 3md:w-[55vw] -translate-y-full image' />
         </div>
       </div>
