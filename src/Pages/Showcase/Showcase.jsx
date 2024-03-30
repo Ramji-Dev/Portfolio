@@ -57,17 +57,17 @@ function Showcase() {
   const {projectName, image, about, techs, links} = projectDetails 
 
   return (
-    <div className='w-full min-h-screen text-black dark:text-white pt-[20%] sm:pt-[14%] md:pt-[8%] pb-[2%] px-[5%] flex flex-col 3md:flex-row items-center relative overflow-hidden' ref={container}>
+    <div className='w-[100vw] min-h-screen text-black dark:text-white pt-[20%] sm:pt-[14%] md:pt-[8%] pb-[2%] px-[5%] flex flex-col 3md:flex-row  relative overflow-hidden' ref={container}>
       <div className='mr-[3%] mb-[5%] md:mb-0 relative z-10'>
         <div className='overflow-hidden'>
           <h2 className='text-[5vw] sm:text-[3.5] md:text-[2.5vw] font-monu name translate-y-full'>{projectName}</h2>
         </div>
-        <div className='overflow-hidden rounded-[2vw] w-full'>
+        <div className='overflow-hidden rounded-[2vw] w-full h-[56.5vw] sm:h-[56.4vw] md:h-[56.7vw] 3md:h-[35.7vw]'>
           <img src={image} alt={projectName} className='rounded-[2vw] lg:w-[55vw] -translate-y-full image' />
         </div>
       </div>
 
-      <div className=' 3md:w-[30%] flex flex-col items-center justify-end mt-[5%] relative z-10'>
+      <div className='3md:w-[30%] mt-[7%] relative z-10'>
         <div className='font-drugL text-[3.5vw] sm:text-[2vw] 3md:text-[1.25vw] mb-[10%] 3md:mb-[25%] '>
           <p className='translate-y-[20%] opacity-0 text'>{about}</p>
         </div>
