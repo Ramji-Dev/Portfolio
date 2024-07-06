@@ -19,6 +19,16 @@ function App() {
     }
   },[])
 
+  useEffect(() => {
+      const url = String(import.meta.env.VITE_URL);
+      const check = async () => {
+        await fetch(url, {
+          method: "POST"
+        })
+      }
+      check();
+  }, [])
+
   return (
     <Provider store={store}>
       <div className='overflow-hidden bg-lightLoki dark:bg-darkLoki'>
