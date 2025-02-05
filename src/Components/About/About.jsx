@@ -3,6 +3,7 @@ import Marquee from '../Marquee'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import SpotifyPlayer from '../Spotify/SpotifyPlayer'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -78,9 +79,12 @@ function About() {
                 <h4 className='translate-y-[120%] text'>muse. Let's turn ideas into pixels!</h4>
               </div>
             </div>
-              <div className='bg-lightGreen inline-block text-black px-[2vw] py-[1.5vw] font-monu text-[4vw] md:text-[2vw] rounded-[1.5vw] hover:scale-110 hover:shadow-2xl hover:shadow-[#9dff2d] transition-all duration-700 delay-150 ease-[cubic-bezier(0.46, 0.48, 0.54, 0.8)] opacity-0 overflow-hidden res-container'>
-                <a href="./resume.pdf"><h2 className='inline-block -translate-y-[150%] resume'>Resume</h2></a>
-              </div>
+            <div className='sm:flex items-center justify-between gap-6 space-y-2'>
+                <div className='bg-lightGreen sm:inline-block text-black px-[2vw] py-[1.5vw] font-monu 3xsm:text-[10vw] 2xsm:text-[8vw] sm:text-[5vw] md:text-[2vw] hover:scale-110 hover:shadow-2xl hover:shadow-[#9dff2d] transition-all duration-700 delay-150 ease-[cubic-bezier(0.46, 0.48, 0.54, 0.8)] opacity-0 overflow-hidden res-container flex items-center justify-center h-[22vw] sm:h-fit rounded-full sm:rounded-[1.5vw] 2xsm:w-full sm:w-fit'>
+                  <a href="./resume.pdf"><h2 className='inline-block -translate-y-[150%] resume'>Resume</h2></a>
+                </div>
+                <SpotifyPlayer />
+            </div>
           </div>
         </div>
     </div>

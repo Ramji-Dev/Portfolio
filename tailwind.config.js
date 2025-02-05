@@ -20,7 +20,21 @@ export default {
       dropShadow: {
         'neon': '0 0 35px rgba(157, 255, 45, 0.45)',
         'dark': '0 15px 35px rgba(0, 0, 0, 0.45)',
-      }
+      },
+      animation: {
+        'marquee': 'marquee 10s linear infinite',
+        'spin-slow': 'spin 10s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(00%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        spin: {
+          '0%': { transform: 'rotate(0)'},
+          '100%': { transform: 'rotate(360deg)'},
+        },
+      },
     },
     fontFamily: {
       monu: 'monu',

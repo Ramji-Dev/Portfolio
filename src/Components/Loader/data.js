@@ -2,7 +2,7 @@ export const loaderText =
     [
         'Awesomeness incoming...',  
         'My pixels are shy...',
-        // 'Get ready to scroll-gasm...',
+        'Get ready to scroll-gasm...',
         'Procrastination in progress...',
         'My cat ate the server...',
         'Sleepwalking through code...',
