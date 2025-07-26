@@ -79,8 +79,8 @@ function Contact() {
             {
               [{text: 'LINKEDIN', link: 'https://www.linkedin.com/in/ram-ji/', id: 1},
                {text: 'GITHUB', link: 'https://github.com/Ramji-Dev', id: 2},
-               {text: 'TWITTER', link: 'https://twitter.com/Ramji_Kd', id: 3},
-               {text: 'INSTAGRAM', link: 'https://instagram.com/mosttalentedcurlyman', id: 4}].map(({text, id, link}) => {
+               {text: 'TWITTER', link: 'https://twitter.com/ramji__dev', id: 3},
+               {text: 'INSTAGRAM', link: 'https://instagram.com/ramji__dev', id: 4}].map(({text, id, link}) => {
                 return (
                   <div key={id} className='flex items-center justify-center overflow-hidden '>
                     <div className=' 4xsm:mx-[1.5vw] 3xsm:mx-[2vw] 2xsm:mx-[3.5vw] md:mx-[10vw] 4xsm:text-[1vw] 3xsm:text-[4vw] sm:text-[2.6vw] md:text-[1.6vw] translate-y-[120%]  dark:hover:text-loki hover:drop-shadow-[0_0px_5px_rgba(157,255,45)] links'>
