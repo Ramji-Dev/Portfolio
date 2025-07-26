@@ -164,8 +164,8 @@ function Skills() {
 
                 <div className='flex gap-[0.5vw]'>
                     <div className='overflow-hidden rounded-[1.5vw] md:rounded-[0.7vw]'>
-                        <div className='bg-white font-drugReg h-[45vw] w-[44.5vw] sm:h-[23vw] sm:w-[23.3vw] md:w-[38vw] 2md:h-[29.3vh] 2md:w-[24vw] rounded-[1.5vw] md:rounded-[0.7vw] p-[2.8vw] relative -translate-y-[120%] bento'>
-                            <div className='absolute top-[21%] sm:top-[30%] md:top-[40%] 4xsm:text-[0.8vw] 2xsm:text-[3.5vw] xsm:text-[2.5vw] sm:text-[2vw] md:text-[1.25vw]'>
+                        <div className='bg-white font-drugReg h-[45vw] w-[44.5vw] sm:h-[23vw] sm:w-[23.3vw] md:w-[38vw] 2md:h-[29.3vh] 2md:w-[24vw] text-[1.25vw] rounded-[1.5vw] md:rounded-[0.7vw] p-[2.8vw] relative -translate-y-[120%] bento'>
+                            <div className='absolute top-[21%] sm:top-[30%] md:top-[40%] text-[3.5vw] xsm:text-[2.5vw] sm:text-[2vw] md:text-[1.25vw]'>
                                 <h1 className='font-monu inline'>Professional Skills</h1>
                                 <div className='flex flex-col translate-x-[10%] '>
                                     {
