@@ -17,10 +17,12 @@ const SpotifyPlayer = () => {
     }
 
     fetchTrack();
-    const interval = setInterval(fetchTrack, 1000 * 20);
+    const interval = setInterval(fetchTrack, 1000 * 30);
 
     return () => clearInterval(interval)
   }, [])
+
+  if (!track?.nowPlaying) return;
  
   return (
     <div className="rounded-full" >
